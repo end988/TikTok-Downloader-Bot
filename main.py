@@ -19,12 +19,12 @@ from progress_bar import progress, TimeFormatter, humanbytes
 from dotenv import load_dotenv
 
 load_dotenv()
-bot_token = os.environ.get('BOT_TOKEN')
-workers = int(os.environ.get('WORKERS'))
-api = int(os.environ.get('API_KEY'))
-hash = os.environ.get('API_HASH')
-chnnl = os.environ.get('CHANNEL_URL')
-BOT_URL = os.environ.get('BOT_URL')
+bot_token = os.environ.get('5602274047:AAEKiJLTz5Z2m__OdJySyuJ7t7cTTrM-zV0')
+workers = int(os.environ.get('4'))
+api = int(os.environ.get('21128779'))
+hash = os.environ.get('08bcad18bac4ad4ca7f77d365600fd3f')
+chnnl = os.environ.get('http://t.me/fintetikbot')
+BOT_URL = os.environ.get('fintetikbot')
 app = Client("JayBee", bot_token=bot_token, api_id=api, api_hash=hash, workers=workers)
 
 
@@ -34,7 +34,7 @@ def start(client, message):
     kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Repo 🔰', url="https://github.com/TerminalWarlord/TikTok-Downloader-Bot/")]]
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am **TikTok Downloader Bot**.\nI can download TikTok video without Watermark.\n\n"
-                          "__**Developer :**__ __@JayBeeDev__\n"
+                          "__**Developer :**__ __@P_S_E__\n"
                           "__**Language :**__ __Python__\n"
                           "__**Framework :**__ __🔥 Pyrogram__",
                      parse_mode='md',
